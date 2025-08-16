@@ -13,7 +13,7 @@ public class Producto {
 		}
 		
 		public String calcularIva() {
-			
+			// verificamo si el iva contiene algun valor
 			if(iva==null || iva==0) {
 				
 				return "\n el producto "+this.nombre +" no tine IVA.\n PRECIO:" + this.precio + "$";

@@ -2,17 +2,13 @@ package Alumnos;
 
 	public class alum2 {
 		//arreglo
-	    public String[] ingresarNombres() {
-	        String[] arregloNombres = new String[8];
-	        arregloNombres[0] = "Juan";
-	        arregloNombres[1] = "Pepito";
-	        arregloNombres[2] = "Valeria";
-	        arregloNombres[3] = "Juan";
-	        arregloNombres[4] = "Pepito";
-	        arregloNombres[5] = "Juan";
-	        arregloNombres[6] = "Erick";
-	        arregloNombres[7] = "Pepito";
-	        return arregloNombres;
+		public static void main(String[] args){
+			
+		     String[] nombres= {"Juan","Pepito","Valeria","Juan","Pepito","Juan","Erick","Pepito","Erick"};
+			
+			Curso alumnos = new Curso("Jairo","java basico" , "1", 160, nombres);
+			System.out.println(alumnos.BuscarNombres());
+		
 	    }
 	}
 
