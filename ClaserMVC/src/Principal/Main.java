@@ -8,20 +8,18 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		 String info = null;
+		 /*String info = null;
 		 if (info == null) {
 			 String terceBgu;
 				terceBgu = info;
 				 terceBgu = "el curso cuenta con 18 estudiantes y son mmuy diciplinados reciben 13 materias diferentes";
 					System.out.println("cursos" + terceBgu);
-				
-			
 			}	 
-		
+		*/
 		
 		//nuevo estudiante
 		
-		 String nuevo1 = null;
+		/* String nuevo1 = null;
 		 if (nuevo1 == null) {
 			// Ahora asignamos un valor
 				nuevo1 = "Juan";
@@ -39,20 +37,21 @@ public class Main {
 	 double n4= 7;
      double resu;
 	 double nota = (n1+n2+n3+n4)/4;
-	 resu=nota;
+	 resu=nota;*/
 		
 		 String[] nombres= {"Juan","Pepito","Valeria","Juan","Pepito","Juan","Erick","Pepito","Erick"};
 
-		 Curso alumnos = new Curso("java basico" , "1", 160, nombres , nota, nuevo1,info);
-		 
-		 
+		 Curso alumnos = new Curso("java basico" , "1", 160, nombres);
 		 CursoVista vista = new CursoVista();
 		 CursoControlador controlador = new CursoControlador(alumnos, vista);
 		 
 		 controlador.buscarAlumno("jairo");
 		 controlador.buscarAlumno("erick");
 		 
-
+		 controlador.agregarAlumno("Gereald"); 
+		 controlador.listaAlumnos();
+		 controlador.agregarAlumno("Yerick"); 
+		 controlador.listaAlumnos();
 	
 	}
 
