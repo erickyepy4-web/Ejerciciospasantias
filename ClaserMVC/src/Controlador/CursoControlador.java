@@ -27,4 +27,6 @@ public class CursoControlador {
 	public void listaAlumnos() {
 		vista.mostrarListaAlumnos(modelo.getListAlumnos());
 	}
+	
+	
 }

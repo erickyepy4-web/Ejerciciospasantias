@@ -1,8 +1,11 @@
 package Principal;
 
 import Controlador.CursoControlador;
+import Controlador.controladorPromedio;
 import Model.Curso;
+import Model.Promedio;
 import Vista.CursoVista;
+import Vista.Vistapromedio;
 
 public class Main {
 	
@@ -52,8 +55,17 @@ public class Main {
 		 controlador.listaAlumnos();
 		 controlador.agregarAlumno("Yerick"); 
 		 controlador.listaAlumnos();
+		 
+		 Promedio promedio = new Promedio();
+		 Vistapromedio nota = new Vistapromedio();
+		 controladorPromedio conprome = new controladorPromedio(promedio, nota);
+		 conprome.sacarPromedio();
+		 
+		 
 	
 	}
+	
+	
 
 }
 
